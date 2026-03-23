@@ -4,6 +4,16 @@
 
 Built in Rust for speed. Replaces AutoRecon with smarter target detection, a clean HTML report, and full OSCP module coverage.
 
+RustRecon is a fast, async network reconnaissance framework built in Rust, designed for OSCP exam prep and penetration testing labs. Unlike traditional recon tools that run the same scans against every target, RustRecon first fingerprints the target — detecting whether it's a Linux box, a Windows standalone machine, or an Active Directory domain controller — then runs only the tools and checks that are relevant.
+
+Built to replace AutoRecon with smarter target classification, live progress indicators, and a clean HTML report sorted by severity. Every scan produces a full output directory with raw tool results, an extracted findings list, auto-generated manual command suggestions, and a dark-themed HTML report you can open in a browser immediately.
+
+Covers the full OSCP attack surface: port scanning via rustscan and nmap, web enumeration with feroxbuster/nikto/whatweb, SMB with enum4linux-ng and CrackMapExec, Active Directory with Kerbrute/BloodHound/Impacket, network services including DNS zone transfer, SNMP, NFS, Redis, and post-discovery with searchsploit version matching and automatic credential/hash extraction from all output.
+
+No auto-exploitation. Stays within OSCP exam rules.
+
+For authorised testing only.
+
 ---
 
 ## Quick start
