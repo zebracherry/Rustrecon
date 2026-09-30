@@ -3,6 +3,7 @@ name = "rustrecon"
 version = "0.1.0"
 edition = "2021"
 description = "OSCP async recon framework"
+license = "MIT"
 
 [[bin]]
 name = "rustrecon"
